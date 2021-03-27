@@ -15,8 +15,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-//        withExistingParent("valorium_block", modLoc("block/valorium_block"));
-//        withExistingParent("valorium_ore", modLoc("block/valorium_ore"));
+        withExistingParent("valorium_block", modLoc("block/valorium_block"));
+        withExistingParent("valorium_ore", modLoc("block/valorium_ore"));
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 

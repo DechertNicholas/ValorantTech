@@ -6,6 +6,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.requiemlabs.valoranttech.ValorantTech;
+import net.requiemlabs.valoranttech.data.client.ModBlockStateProvider;
 import net.requiemlabs.valoranttech.data.client.ModItemModelProvider;
 
 @Mod.EventBusSubscriber(modid = ValorantTech.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -19,5 +20,13 @@ public final class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
         gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
+        gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
+
+        ModBlockTagsProvider blockTags = new ModBlockTagsProvider(gen, existingFileHelper);
+        gen.addProvider(blockTags);
+        gen.addProvider(new ModItemTagsProvider(gen, blockTags, existingFileHelper));
+
+        gen.addProvider(new ModLootTableProvider(gen));
+        gen.addProvider(new ModRecipeProvider(gen));
     }
 }

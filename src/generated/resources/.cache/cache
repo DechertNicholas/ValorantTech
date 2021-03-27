@@ -1,1 +1,17 @@
+1b3359ae79096cf1b6f68f0e787a5dd79f8e5f31 assets/valoranttech/blockstates/valorium_block.json
+7545074cf0aef463351072d536ae3424ae32376b assets/valoranttech/blockstates/valorium_ore.json
+980189c2c77a0431ff451bf085367b4c9497ff55 assets/valoranttech/models/block/valorium_block.json
+5cd0311274787ccb26cd4bd05db41cb989a0e31f assets/valoranttech/models/block/valorium_ore.json
+e50f0dbbb65da157f8d6286cb816f1bb3001f5f4 assets/valoranttech/models/item/valorium_block.json
 6d992ea12f322d5eec0e9dcf1725140b97aa37af assets/valoranttech/models/item/valorium_ingot.json
+2d62c1863f5e8501361c4812eaedb5eb85fea37d assets/valoranttech/models/item/valorium_ore.json
+e7a7e76127ac8db35695aa4a11f44391a357e00d data/forge/tags/blocks/ores.json
+9bd267cfb4381810fe0dcbd6b845369596d5bba5 data/forge/tags/blocks/ores/valorium.json
+a8096c1041380e71429a45f9faf721673c63674a data/forge/tags/blocks/storage_blocks.json
+f8a3f183b81a5a390d682adfedad9b22002b0ed6 data/forge/tags/blocks/storage_blocks/valorium.json
+fd7ae86c2d0dbeded9c0ea7dddb0e985a720a5e2 data/forge/tags/items/ingots.json
+b9f9e0bdd26327d388bcdd1a3aa9c0cef4b3f49e data/forge/tags/items/ingots/valorium.json
+e7a7e76127ac8db35695aa4a11f44391a357e00d data/forge/tags/items/ores.json
+9bd267cfb4381810fe0dcbd6b845369596d5bba5 data/forge/tags/items/ores/valorium.json
+a8096c1041380e71429a45f9faf721673c63674a data/forge/tags/items/storage_blocks.json
+f8a3f183b81a5a390d682adfedad9b22002b0ed6 data/forge/tags/items/storage_blocks/valorium.json
