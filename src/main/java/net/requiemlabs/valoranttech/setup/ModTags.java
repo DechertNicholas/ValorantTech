@@ -14,11 +14,11 @@ public class ModTags {
         public static final ITag.INamedTag<Block> STORAGE_BLOCKS_VALORIUM = forge("storage_blocks/valorium");
 
         private static ITag.INamedTag<Block> forge(String path) {
-            return BlockTags.createOptional(new ResourceLocation("forge", path));
+            return BlockTags.bind(new ResourceLocation("forge", path).toString());
         }
 
         private static ITag.INamedTag<Block> mod(String path) {
-            return BlockTags.createOptional(new ResourceLocation(ValorantTech.MOD_ID, path));
+            return BlockTags.bind(new ResourceLocation(ValorantTech.MOD_ID, path).toString());
         }
     }
 
@@ -28,11 +28,11 @@ public class ModTags {
         public static final ITag.INamedTag<Item>  INGOTS_VALORIUM = forge("ingots/valorium");
 
         private static ITag.INamedTag<Item> forge(String path) {
-            return ItemTags.createOptional(new ResourceLocation("forge", path));
+            return ItemTags.bind(new ResourceLocation("forge", path).toString());
         }
 
         private static ITag.INamedTag<Item> mod(String path) {
-            return ItemTags.createOptional(new ResourceLocation(ValorantTech.MOD_ID, path));
+            return ItemTags.bind(new ResourceLocation(ValorantTech.MOD_ID, path).toString());
         }
     }
 }

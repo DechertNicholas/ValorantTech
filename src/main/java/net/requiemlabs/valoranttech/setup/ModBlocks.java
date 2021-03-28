@@ -7,6 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
 import java.rmi.registry.Registry;
@@ -17,6 +18,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Properties.of(Material.STONE)
                     .strength(3, 10)
                     .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> VALORIUM_BLOCK = register("valorium_block", () ->

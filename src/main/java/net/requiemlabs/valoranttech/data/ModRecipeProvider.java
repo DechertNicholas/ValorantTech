@@ -1,6 +1,9 @@
 package net.requiemlabs.valoranttech.data;
 
 import net.minecraft.data.*;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.util.ResourceLocation;
+import net.requiemlabs.valoranttech.ValorantTech;
 import net.requiemlabs.valoranttech.setup.ModBlocks;
 import net.requiemlabs.valoranttech.setup.ModItems;
 
@@ -25,5 +28,17 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("###")
                 .unlockedBy("has_item", has(ModItems.VALORIUM_INGOT.get()))
                 .save(consumer);
+
+        CookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.VALORIUM_ORE.get()), ModItems.VALORIUM_INGOT.get(), 0.7f, 200)
+                .unlockedBy("has_item", has(ModBlocks.VALORIUM_ORE.get()))
+                .save(consumer, modId("valorium_ingot_smelting"));
+
+        CookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.VALORIUM_ORE.get()), ModItems.VALORIUM_INGOT.get(), 0.7f, 100)
+                .unlockedBy("has_item", has(ModBlocks.VALORIUM_ORE.get()))
+                .save(consumer, modId("valorium_ingot_blasting"));
+    }
+
+    private static ResourceLocation modId(String path) {
+        return new ResourceLocation(ValorantTech.MOD_ID, path);
     }
 }

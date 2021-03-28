@@ -42,5 +42,12 @@ public class ModLootTableProvider extends LootTableProvider {
             dropSelf(ModBlocks.VALORIUM_BLOCK.get());
             dropSelf(ModBlocks.VALORIUM_ORE.get());
         }
+
+        @Override
+        protected Iterable<Block> getKnownBlocks() {
+            return Registration.BLOCKS.getEntries().stream()
+                    .map(RegistryObject::get)
+                    .collect(Collectors.toList());
+        }
     }
 }

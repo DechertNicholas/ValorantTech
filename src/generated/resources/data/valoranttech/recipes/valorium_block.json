@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "valoranttech:valorium_ingot"
+    }
+  },
+  "result": {
+    "item": "valoranttech:valorium_block"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valoranttech:valorium_block"
+    }
+  ],
+  "result": {
+    "item": "valoranttech:valorium_ingot",
+    "count": 9
+  }
+}
